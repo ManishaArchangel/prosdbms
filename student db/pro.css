@@ -1,0 +1,50 @@
+.body
+{
+
+background-image:url("porter-raab-gnj9vj--FRY-unsplash.jpg");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size:100%100%;
+
+}
+
+.logo
+{
+	margin-top:-20px;
+	background-position:relative;
+	height:80px;
+	width:90px;
+}
+.nav{
+	margin-right:80px;
+}
+
+#heading
+{
+	font-family:"Times New Roman ", Times,Serif;
+	
+	font-size:50px;
+	color:white;
+	
+}
+hr
+{
+	margin-top:50px;
+}
+.address
+{margin-left:80px;
+	margin-top:220px;
+	color:white;
+}
+.contact
+{
+	margin-top:-90px;
+margin-left:980px;
+color:white;
+}
+.email
+{
+	margin-top:-90px;
+	margin-right:200px;
+	color:white;
+}

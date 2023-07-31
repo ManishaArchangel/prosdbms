@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+ pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.*,java.util.*"%>
+<%
+String fname = request.getParameter("fname");
+String lname = request.getParameter("lname");
+String email = request.getParameter("email");
+String codeno = request.getParameter("codeno");
+String password = request.getParameter("password");
+try {
+ Class.forName("com.mysql.jdbc.Driver");
+ Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/info", "root", "");
+ Statement st = conn.createStatement();
+ int i = st.executeUpdate("insert into teacherlog(fname,lname,email,codeno,password)values('" + fname + "','" + lname
+ + "','" + email + "','" + codeno + "','" + password + "')");
+ out.println("Thank you for register ! Please <a href='teacherdesign.html'>Login</a> to continue.");
+} catch (Exception e) {
+ System.out.print(e);
+ e.printStackTrace();
+}
+%>
